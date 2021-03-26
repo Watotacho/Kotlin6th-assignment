@@ -1,22 +1,23 @@
 fun main(){
-    var human=mary("James","20",40)
+    var human=mary("James","20",40f)
     human.eat(2)
     println(human.weight)
+    human.speak("I love coding")
 
     var mary=user("James","Peter","jamespeter@gmail.com","0741789056","3470")
-    print(mary.firstName)
-    print(mary.email) }
+    println(mary.firstName)
+    println(mary.email) }
 
-class mary(var name:String,var age:String,var weight:Int){
+class mary(var name:String,var age:String,var weight:Float){
     fun eat(foodWeight:Int){
     println("I am eating $foodWeight kg of food")}
     fun add(weight:Int) {
         println(2)
     }
     fun speak(speech:String){
-      print(speech)}
-fun birthday(){
-    age=age+1
+      println(speech)}
+fun birthday(age:Int){
+    println(age)
 
 }
 }
